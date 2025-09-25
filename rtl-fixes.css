@@ -1,0 +1,262 @@
+/* RTL-specific fixes for Arabic layout */
+
+/* Global RTL text direction */
+[dir="rtl"] {
+    text-align: right;
+}
+
+/* Keep centered text centered */
+[dir="rtl"] .text/* RTL List fixes */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    text-align: right;
+}
+
+[dir="rtl"] ul li,
+[dir="rtl"] ol li {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Animated background elements RTL fixes */
+[dir="rtl"] .rtl-animate-1 {
+    left: auto;
+    right: 1rem;
+}
+
+[dir="rtl"] .rtl-animate-2 {
+    right: auto;
+    left: 1.5rem;
+}
+
+[dir="rtl"] .rtl-animate-3 {
+    left: auto;
+    right: 2rem;
+}
+
+/* RTL Navigation spacing */
+[dir="rtl"] .rtl-nav-space {
+    direction: rtl;
+}
+
+[dir="rtl"] .rtl-nav-space > * {
+    margin-left: 1.25rem;
+    margin-right: 0;
+}
+
+[dir="rtl"] .rtl-nav-space > *:first-child {
+    margin-left: 0;
+}
+
+/* RTL Button spacing - Use gap instead of margins for better control */
+[dir="rtl"] .rtl-button-space {
+    direction: rtl;
+}
+
+/* RTL Project button spacing - Use gap for consistency */
+[dir="rtl"] .project-buttons {
+    direction: rtl;
+}
+
+/* RTL Icon fixes - swap margins for icons */
+[dir="rtl"] .fas.mr-2,
+[dir="rtl"] .fab.mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+[dir="rtl"] .fas.mr-3,
+[dir="rtl"] .fab.mr-3 {
+    margin-right: 0;
+    margin-left: 0.75rem;
+}
+
+/* Specific RTL icon classes for better control */
+[dir="rtl"] .rtl\\:mr-0 {
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .rtl\\:ml-2 {
+    margin-left: 0.5rem !important;
+}
+
+[dir="rtl"] .rtl\\:rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* RTL Activities list icon spacing */
+[dir="rtl"] .activities-list .fas {
+    margin-right: 0.75rem;
+    margin-left: 0;
+}
+
+/* Settings dropdown RTL positioning */
+[dir="rtl"] #settings-dropdown {
+    direction: rtl;
+}
+
+[dir="rtl"] #settings-menu {
+    /* left: 0 !important; */
+    /* right: auto !important; */
+    transform-origin: top left !important;
+}
+
+/* RTL hover effects */
+[dir="rtl"] #settings-menu button:hover {
+    transform: translateX(2px);
+}
+
+/* Flex direction fixes */
+[dir="rtl"] .justify-between {
+    flex-direction: row-reverse;
+}
+
+/* Navigation flex fix */
+[dir="rtl"] .hidden.md\\:flex {
+    flex-direction: row-reverse;
+}
+
+/* RTL Grid layout fixes */
+[dir="rtl"] .grid {
+    direction: ltr; /* Keep grid layout LTR */
+}
+
+[dir="rtl"] .grid > * {
+    direction: rtl; /* But make individual items RTL */
+}
+
+/* RTL Space utilities - Override with gap where possible */
+[dir="rtl"] .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 0.75rem;
+}
+
+[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+[dir="rtl"] .space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 1.25rem;
+}
+
+[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+/* RTL Margin utilities */
+[dir="rtl"] .ml-2 { margin-left: 0; margin-right: 0.5rem; }
+[dir="rtl"] .ml-3 { margin-left: 0; margin-right: 0.75rem; }
+[dir="rtl"] .ml-4 { margin-left: 0; margin-right: 1rem; }
+[dir="rtl"] .ml-6 { margin-left: 0; margin-right: 1.5rem; }
+[dir="rtl"] .ml-auto { margin-left: 0; margin-right: auto; }
+
+[dir="rtl"] .mr-2 { margin-right: 0; margin-left: 0.5rem; }
+[dir="rtl"] .mr-3 { margin-right: 0; margin-left: 0.75rem; }
+[dir="rtl"] .mr-4 { margin-right: 0; margin-left: 1rem; }
+[dir="rtl"] .mr-6 { margin-right: 0; margin-left: 1.5rem; }
+[dir="rtl"] .mr-auto { margin-right: 0; margin-left: auto; }
+
+/* RTL Padding utilities */
+[dir="rtl"] .pl-3 { padding-left: 0; padding-right: 0.75rem; }
+[dir="rtl"] .pl-4 { padding-left: 0; padding-right: 1rem; }
+[dir="rtl"] .pr-3 { padding-right: 0; padding-left: 0.75rem; }
+[dir="rtl"] .pr-4 { padding-right: 0; padding-left: 1rem; }
+
+/* Arabic font improvements */
+[dir="rtl"] body,
+[dir="rtl"] .font-arabic {
+    font-family: 'Tahoma', 'Arial', 'Segoe UI', 'Noto Sans Arabic', sans-serif;
+    line-height: 1.6;
+}
+
+/* Ensure proper text direction for all paragraphs and lists */
+[dir="rtl"] p,
+[dir="rtl"] li,
+[dir="rtl"] .text-left {
+    text-align: right;
+}
+
+/* RTL List styling */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    text-align: right;
+}
+
+[dir="rtl"] ul li,
+[dir="rtl"] ol li {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Mobile menu RTL fixes */
+[dir="rtl"] #mobile-menu {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] #mobile-menu a {
+    text-align: right;
+}
+
+/* Contact section icon fixes */
+[dir="rtl"] .contact-info .fas,
+[dir="rtl"] .contact-info .fab {
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+/* Skills section improvements */
+[dir="rtl"] .skills-grid .fas {
+    margin-left: 0.75rem;
+    margin-right: 0;
+}
+
+/* Experience cards RTL improvements */
+[dir="rtl"] .experience-card .fas,
+[dir="rtl"] .experience-card .fab {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* Button minimum widths for better alignment */
+.min-w-140 {
+    min-width: 140px;
+}
+
+.min-w-180 {
+    min-width: 180px;
+}
+
+/* Consistent button alignment */
+.hero-buttons .flex,
+.project-buttons,
+.rtl-button-space {
+    align-items: center;
+}
+
+/* Smooth transitions for language switching */
+* {
+    transition: margin 0.3s ease, padding 0.3s ease, text-align 0.3s ease;
+}
+
+/* RTL Button icon spacing improvements */
+[dir="rtl"] button .fas,
+[dir="rtl"] button .fab,
+[dir="rtl"] a .fas,
+[dir="rtl"] a .fab {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+/* Override for specific RTL classes */
+[dir="rtl"] .rtl\\:ml-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .rtl\\:mr-0 {
+    margin-right: 0 !important;
+}

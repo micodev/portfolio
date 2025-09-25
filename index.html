@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Al-Obaide - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'arabic': ['Tahoma', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="rtl-fixes.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-arabic transition-colors duration-300">
+    <!-- Header/Navigation -->
+    <header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100" data-translate="name">Ibrahim Al-Obaide</h1>
+                <div class="flex items-center">
+                    <div class="hidden md:flex space-x-5 rtl:space-x-reverse rtl-nav-space">
+                        <a href="#home" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="home">Home</a>
+                        <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="about">About</a>
+                        <a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="experience">Experience</a>
+                        <a href="#education" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="education">Education</a>
+                        <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="skills">Skills</a>
+                        <a href="#awards" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="awards">Awards</a>
+                        <a href="projects.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="projects">Projects</a>
+                        <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" data-translate="contact">Contact</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <button class="md:hidden" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl text-gray-600 dark:text-gray-300"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-2">
+                    <a href="#home" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="home">Home</a>
+                    <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="about">About</a>
+                    <a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="experience">Experience</a>
+                    <a href="#education" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="education">Education</a>
+                    <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="skills">Skills</a>
+                    <a href="#awards" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="awards">Awards</a>
+                    <a href="projects.html" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="projects">Projects</a>
+                    <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2" data-translate="contact">Contact</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="assets/1668403469306.jpg" alt="Ibrahim Ayad" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
+            </div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6" data-translate="name">Ibrahim Al-Obaide</h2>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100" data-translate="title">Multi-Platform Application Developer</p>
+            <p class="text-lg mb-8 max-w-3xl mx-auto leading-relaxed" data-translate="description">
+                A programmer of applications on different platforms such as mobile phones and websites. 
+                I am tactful and good at decision making in technical matters, as well as I can lead a 
+                software team to find software solutions for various scientific and life fields.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 hero-buttons">
+                <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center min-w-[180px]">
+                    <i class="fas fa-envelope mr-2 rtl:mr-0 rtl:ml-2"></i>
+                    <span data-translate="getInTouch">Get In Touch</span>
+                </a>
+                <a href="projects.html" class="border border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center min-w-[180px]">
+                    <i class="fas fa-briefcase mr-2 rtl:mr-0 rtl:ml-2"></i>
+                    <span data-translate="viewProjects">View Projects</span>
+                </a>
+                <a href="https://linktr.ee/anime19" target="_blank" class="border border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center min-w-[180px]">
+                    <i class="fas fa-link mr-2 rtl:mr-0 rtl:ml-2"></i>
+                    <span data-translate="allLinks">All Links</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100" data-translate="aboutMe">About Me</h3>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-100" data-translate="professionalProfile">Professional Profile</h4>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6" data-translate="aboutDescription1">
+                        As a multi-platform application developer, I specialize in creating innovative solutions 
+                        across mobile and web platforms. My expertise lies in technical problem-solving and 
+                        leading development teams to deliver high-quality software solutions.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed" data-translate="aboutDescription2">
+                        I am passionate about learning new technologies and applying them to solve real-world 
+                        problems in various scientific and life fields. My approach combines technical excellence 
+                        with strategic thinking to deliver impactful solutions.
+                    </p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-100" data-translate="activitiesInterests">Activities & Interests</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center activities-list">
+                            <i class="fas fa-code text-blue-600 mr-3"></i>
+                            <span class="text-gray-700 dark:text-gray-200" data-translate="technicalProblemSolving">Technical problem solving</span>
+                        </div>
+                        <div class="flex items-center activities-list">
+                            <i class="fas fa-puzzle-piece text-blue-600 mr-3"></i>
+                            <span class="text-gray-700 dark:text-gray-200" data-translate="solvingPuzzles">Solving puzzles programmatically</span>
+                        </div>
+                        <div class="flex items-center activities-list">
+                            <i class="fas fa-book text-blue-600 mr-3"></i>
+                            <span class="text-gray-700 dark:text-gray-200" data-translate="learningNew">Learning new things</span>
+                        </div>
+                        <div class="flex items-center activities-list">
+                            <i class="fas fa-futbol text-blue-600 mr-3"></i>
+                            <span class="text-gray-700 dark:text-gray-200" data-translate="footballSport">Football sport</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-700">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100" data-translate="workExperience">Work Experience</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Experience Item 1 - Current Position -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900 dark:to-purple-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-500">
+                    <div class="flex flex-col mb-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Senior Software Developer (Web & Mobile)</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium mb-2">SJC of Iraq - Supreme Judicial Council</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">May 2022 - Present • On-site</p>
+                            <div class="inline-flex items-center bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium mb-2">
+                                <i class="fas fa-circle mr-2 text-xs"></i>
+                                <span data-translate="currentPosition">Current Position</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-code mr-2"></i>
+                            <span class="text-sm font-medium">Full-Stack</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm">Senior role developing comprehensive web and mobile applications for the Supreme Judicial Council, focusing on judicial system solutions and digital transformation initiatives.</p>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col mb-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Flutter Mobile Developer</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium mb-2">HalaSat Internet Service Provider Company</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">May 2022 - January 2023 • On-site</p>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fab fa-flutter mr-2"></i>
+                            <span class="text-sm font-medium">Flutter SDK</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm">Build and publish new application on both mobile operating system such as iOS, Android using Flutter SDK.</p>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col mb-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Computer Teacher</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium mb-2">Rawafid Al-mustaqbal Primary School</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">October 2021 - April 2022 • On-site</p>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-chalkboard-teacher mr-2"></i>
+                            <span class="text-sm font-medium">Education</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm">Giving lecture to students using Computer at Computer lesson, teaching fundamental computer skills and digital literacy.</p>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col mb-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Software Developer</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium mb-2">Freelancer</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">January 2020 - January 2020 • Remote</p>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-laptop-code mr-2"></i>
+                            <span class="text-sm font-medium">Full-Stack</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm">Build and publish new application on both mobile operating system such as iOS, Android using Flutter SDK also on Web.</p>
+                </div>
+
+                <!-- Experience Item 5 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col mb-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Mobile Developer</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium mb-2">Enjaz Company Baghdad</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">May 2019 - January 2020 • On-site</p>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fab fa-flutter mr-2"></i>
+                            <span class="text-sm font-medium">Flutter SDK</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm">Build and publish new application on both mobile operating system such as iOS, Android using Flutter SDK.</p>
+                </div>
+
+                <!-- Experience Item 6 -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col mb-4">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Technical Support</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium mb-2">Code For Iraq Organization</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-3">July 2017 - January 2020 • Remote</p>
+                        </div>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-headset mr-2"></i>
+                            <span class="text-sm font-medium">Support</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm">Giving technical support to partners and also manage applications made by the organization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100" data-translate="educationTitle">Education</h3>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-3" data-translate="bachelorCS">Bachelor of Computer Science</h4>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium text-lg mb-2" data-translate="university">Al-Mustansiriah University</p>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4" data-translate="graduated">Graduated: 2020</p>
+                            <div class="inline-flex items-center bg-yellow-100 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-trophy mr-2"></i>
+                                <span data-translate="firstInDepartment">First in Department</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 md:mt-0 md:ml-6">
+                            <div class="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg text-center">
+                                <i class="fas fa-graduation-cap text-3xl text-blue-600 dark:text-blue-400 mb-2"></i>
+                                <p class="text-gray-700 dark:text-gray-200 font-medium">Computer Science</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 leading-relaxed" data-translate="educationDescription">
+                        Completed Bachelor's degree in Computer Science with exceptional academic performance, 
+                        graduating as the top student in the department. Gained comprehensive knowledge in 
+                        software development, algorithms, data structures, and computer systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-700">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100" data-translate="technicalSkills">Technical Skills</h3>
+            
+            <!-- Computer Skills -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-center mb-8 text-gray-800 dark:text-gray-100" data-translate="computerSkills">Computer Skills</h4>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Programming Languages -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-code text-blue-600 text-2xl mr-3"></i>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="programmingLanguages">Programming Languages</h5>
+                        </div>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>C# (OOP, Windows Forms, Telegram Bots)</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>ASP.NET MVC/API</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Python, Lua (Telegram Bots)</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Dart (Flutter Cross Platform)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-globe text-blue-600 text-2xl mr-3"></i>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="webTechnologies">Web Technologies</h5>
+                        </div>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>PHP, Laravel Framework</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>HTML, CSS, JavaScript</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Vue.js, Nuxt.js</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>jQuery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data & Version Control -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-database text-blue-600 text-2xl mr-3"></i>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="dataVersionControl">Data & Version Control</h5>
+                        </div>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>JSON and Standard SQL</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Git (GitHub)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Skills -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-center mb-8 text-gray-800 dark:text-gray-100" data-translate="database">Database</h4>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100 mb-4 flex items-center">
+                                <i class="fas fa-server text-blue-600 mr-3"></i>
+                                <span data-translate="databaseSystems">Database Systems</span>
+                            </h5>
+                            <ul class="space-y-3 text-gray-700 dark:text-gray-200">
+                                <li class="flex items-center">
+                                    <i class="fas fa-database text-blue-500 mr-3"></i>
+                                    MS Access
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-database text-orange-500 mr-3"></i>
+                                    MySQL
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-database text-blue-600 mr-3"></i>
+                                    MS SQL Server
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-database text-gray-600 mr-3"></i>
+                                    SQLite
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100 mb-4 flex items-center">
+                                <i class="fas fa-file-code text-blue-600 mr-3"></i>
+                                <span data-translate="dataStorage">Data Storage</span>
+                            </h5>
+                            <ul class="space-y-3 text-gray-700 dark:text-gray-200">
+                                <li class="flex items-center">
+                                    <i class="fas fa-file-code text-yellow-500 mr-3"></i>
+                                    JSON FILES
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-memory text-red-500 mr-3"></i>
+                                    REDIS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Computer Skills -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-center mb-8 text-gray-800 dark:text-gray-100" data-translate="otherComputerSkills">Other Computer Skills</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Development Tools -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tools text-blue-600 text-2xl mr-3"></i>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="developmentTools">Development Tools & IDEs</h5>
+                        </div>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Visual Studio Community</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Android Studio</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Visual Studio Code</li>
+                        </ul>
+                    </div>
+
+                    <!-- Systems & Concepts -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-cogs text-blue-600 text-2xl mr-3"></i>
+                            <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="systemsConcepts">Systems & Concepts</h5>
+                        </div>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-200">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Algorithms & Data Structures</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Windows, Ubuntu, Android</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>MS Office (Word, Excel, PowerPoint)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100" data-translate="awardsRecognition">Awards & Recognition</h3>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900 dark:to-orange-900 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-yellow-500">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-500 p-4 rounded-full mr-6">
+                            <i class="fas fa-trophy text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2" data-translate="ieeeYoungProfessional">IEEE Young Professional</h4>
+                            <p class="text-yellow-700 dark:text-yellow-300 font-medium">Technical Support & PHP Task Achievement</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-200 leading-relaxed" data-translate="ieeeDescription">
+                        Recognized as an IEEE Young Professional for outstanding performance in technical support 
+                        and achievement in PHP development tasks. This recognition highlights expertise in 
+                        problem-solving, technical implementation, and professional development in the field 
+                        of software engineering.
+                    </p>
+                    <div class="mt-4 inline-flex items-center bg-yellow-100 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200 px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-medal mr-2"></i>
+                        <span data-translate="professionalAchievement">Professional Achievement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100" data-translate="contact">Get In Touch</h3>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-100" data-translate="contactInfo">Contact Information</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="address">Address</h5>
+                                <p class="text-gray-600 dark:text-gray-300">Al-Hadi Street, Al-Shaab, Baghdad, Iraq, 10044</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="phone">Phone</h5>
+                                <a href="tel:+9647700459826" class="text-blue-600 hover:underline block">+964 770 045 9826</a>
+                                <a href="tel:+9647838409805" class="text-blue-600 hover:underline block">+964 783 840 9805</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="email">Email</h5>
+                                <a href="mailto:Ibrahimayad321@gmail.com" class="text-blue-600 hover:underline">Ibrahimayad321@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fab fa-telegram text-blue-600 mr-4 mt-1"></i>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 dark:text-gray-100" data-translate="telegram">Telegram</h5>
+                                <a href="https://t.me/anime19" target="_blank" class="text-blue-600 hover:underline">@anime19</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg">
+                    <h4 class="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-100" data-translate="letsWorkTogether">Let's Work Together</h4>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6" data-translate="contactDescription">
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you need a mobile app, a website, or technical consultation, 
+                        I'd love to hear from you.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 rtl-button-space">
+                        <a href="https://linktr.ee/anime19" target="_blank" 
+                           class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center min-w-[140px]">
+                            <i class="fas fa-link mr-2 rtl:mr-0 rtl:ml-2"></i>
+                            <span data-translate="allLinks">All Links</span>
+                        </a>
+                        <a href="mailto:Ibrahimayad321@gmail.com" 
+                           class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg transition-colors flex items-center justify-center min-w-[140px]">
+                            <i class="fas fa-envelope mr-2 rtl:mr-0 rtl:ml-2"></i>
+                            <span data-translate="emailMe">Email Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Ibrahim Al-Obaide. <span data-translate="allRightsReserved">All rights reserved.</span></p>
+            <p class="text-gray-400 mt-2" data-translate="title">Multi-Platform Application Developer</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="theme-lang.js"></script>
+    <!-- Smooth scrolling script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Close mobile menu if open
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Add active class to navigation links based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600', 'dark:text-blue-400');
+                link.classList.add('text-gray-600', 'dark:text-gray-300');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-600', 'dark:text-gray-300');
+                    link.classList.add('text-blue-600', 'dark:text-blue-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
