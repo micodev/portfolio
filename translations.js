@@ -245,8 +245,8 @@ const translations = {
         
         // Projects Page
         myProjects: "مشاريعي",
-        projectsSubtitle: "استكشف محفظة أعمالي من تطبيقات المحمول والويب",
-        backToPortfolio: "العودة إلى المحفظة",
+        projectsSubtitle: "استكشاف أعمالي من تطبيقات المحمول والويب",
+        backToPortfolio: "العودة",
         featuredProjects: "المشاريع المميزة",
         projectsDescription: "عرض خبرتي في تطوير المحمول باستخدام Flutter، تقنيات البث المتقدمة، وحلول التجارة الإلكترونية لتجارب رقمية شاملة.",
         
